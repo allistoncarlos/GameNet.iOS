@@ -9,9 +9,7 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        NavigationView {
-            Text("Dashboard")
-        }
+        Text("Dashboard")
     }
 }
 
