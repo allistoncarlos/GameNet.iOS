@@ -13,6 +13,9 @@
 		A56A171F25FA80BF008CC4A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A170A25FA80BE008CC4A8 /* ContentView.swift */; };
 		A56A172025FA80BF008CC4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56A170B25FA80BF008CC4A8 /* Assets.xcassets */; };
 		A56A172125FA80BF008CC4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56A170B25FA80BF008CC4A8 /* Assets.xcassets */; };
+		A59A711F25FE331E00C9CBF1 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */; };
+		A59A712025FE331E00C9CBF1 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */; };
+		A59A712925FE34E900C9CBF1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A712825FE34E900C9CBF1 /* Configuration.swift */; };
 		A59D728625FA836F001E2E21 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D728525FA836F001E2E21 /* DashboardView.swift */; };
 		A59D728725FA836F001E2E21 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D728525FA836F001E2E21 /* DashboardView.swift */; };
 		A59D728B25FA83AC001E2E21 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D728A25FA83AC001E2E21 /* GamesView.swift */; };
@@ -32,6 +35,8 @@
 		A56A171825FA80BF008CC4A8 /* GameNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56A171A25FA80BF008CC4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A56A171B25FA80BF008CC4A8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A59A711E25FE331E00C9CBF1 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		A59A712825FE34E900C9CBF1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A59D728525FA836F001E2E21 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A59D728A25FA83AC001E2E21 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		A59D728F25FA83FC001E2E21 /* PlatformsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformsView.swift; sourceTree = "<group>"; };
@@ -69,10 +74,12 @@
 		A56A170825FA80BE008CC4A8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A59A712725FE34E000C9CBF1 /* Utils */,
 				A59D728425FA8359001E2E21 /* Views */,
 				A56A170925FA80BE008CC4A8 /* GameNetApp.swift */,
 				A56A170A25FA80BE008CC4A8 /* ContentView.swift */,
 				A56A170B25FA80BF008CC4A8 /* Assets.xcassets */,
+				A59A711E25FE331E00C9CBF1 /* Development.xcconfig */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -101,6 +108,14 @@
 				A56A171B25FA80BF008CC4A8 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		A59A712725FE34E000C9CBF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A59A712825FE34E900C9CBF1 /* Configuration.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A59D728425FA8359001E2E21 /* Views */ = {
@@ -192,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59A711F25FE331E00C9CBF1 /* Development.xcconfig in Resources */,
 				A56A172025FA80BF008CC4A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59A712025FE331E00C9CBF1 /* Development.xcconfig in Resources */,
 				A56A172125FA80BF008CC4A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +230,7 @@
 			files = (
 				A56A171E25FA80BF008CC4A8 /* ContentView.swift in Sources */,
 				A59D728625FA836F001E2E21 /* DashboardView.swift in Sources */,
+				A59A712925FE34E900C9CBF1 /* Configuration.swift in Sources */,
 				A59D728B25FA83AC001E2E21 /* GamesView.swift in Sources */,
 				A56A171C25FA80BF008CC4A8 /* GameNetApp.swift in Sources */,
 				A59D729725FA8424001E2E21 /* ListsView.swift in Sources */,
@@ -238,6 +256,7 @@
 /* Begin XCBuildConfiguration section */
 		A56A172225FA80BF008CC4A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -297,6 +316,7 @@
 		};
 		A56A172325FA80BF008CC4A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -349,6 +369,7 @@
 		};
 		A56A172525FA80BF008CC4A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +391,7 @@
 		};
 		A56A172625FA80BF008CC4A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,6 +414,7 @@
 		};
 		A56A172825FA80BF008CC4A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,6 +437,7 @@
 		};
 		A56A172925FA80BF008CC4A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59A711E25FE331E00C9CBF1 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
